@@ -1,0 +1,83 @@
+/* Container */
+.container {
+  align-items: center;
+  margin-bottom: 600px;
+}
+
+.phone-title {
+  margin-top: 40px;
+  font-family: Rubik;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 143%;
+  letter-spacing: -0.36px;
+  color: #0f172a;
+}
+
+/* Label */
+.phone-label {
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 6px;
+  font-family: Rubik;
+  font-size: 14px;
+  color: #64748b;
+}
+.phone-label span {
+  color: #ff0000;
+}
+
+/* Input row */
+.phone-input-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Country code input */
+.phone-country-input {
+  width: 100px;
+  height: 76px;
+  padding: 0 16px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  border-radius: 8px;
+  border: 1px solid #9dbdff;
+  background-color: #ffffff;
+
+  font-family: Rubik;
+  font-size: 14px;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+.phone-country-input:focus-within {
+  border-color: #003ddb;
+}
+
+/* Phone input */
+.phone-input {
+  width: 250px;
+  height: 70px;
+  padding: 0 16px;
+
+  border-radius: 8px;
+  border: 1px solid #9dbdff;
+
+  font-family: Rubik;
+  font-size: 14px;
+  color: #0f172a;
+  outline: none;
+}
+
+.phone-input::placeholder {
+  color: #cbd5e1;
+}
+
+.phone-input:focus {
+  border-color: #003ddb;
+}

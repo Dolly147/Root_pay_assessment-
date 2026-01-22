@@ -1,0 +1,48 @@
+/* Bottom actions wrapper - common for all auth pages */
+.auth-actions {
+  margin-top: 460px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Back button */
+.btn-outline {
+  padding: 14px 90px;
+  border-radius: 999px;
+  border: 1px solid #d0d5dd;
+  background-color: transparent;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 600;
+  color: #005cfb;
+  cursor: pointer;
+}
+
+/* Primary button */
+.btn-primary {
+  padding: 14px 90px;
+  border-radius: 999px;
+  background-color: #0a4cff;
+  color: #ffffff;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #0a4cff;
+  cursor: pointer;
+}
+
+/* Hover */
+.btn-primary:hover {
+  background-color: #003ddb;
+}
+
+/* Disabled */
+.btn-primary:disabled {
+  background-color: #e2e8f0;
+  border-color: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+}

@@ -1,0 +1,110 @@
+/* Overlay */
+.success-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal */
+.success-modal {
+  width: 420px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  font-family: Rubik;
+}
+
+/* Icon */
+.success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #003ddb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+/* Title */
+.success-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Subtitle */
+.success-subtitle {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Summary box */
+.success-summary {
+  margin-top: 24px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+  padding: 16px 20px;
+  text-align: left;
+  font-size: 13px;
+}
+
+/* Rows */
+.success-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.success-label {
+  color: #64748b;
+}
+
+.success-value {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.success-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 8px 0;
+}
+
+/* Note */
+.success-note {
+  margin-top: 16px;
+  font-size: 11px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.success-check {
+  color: #16a34a;
+}
+
+/* Button */
+.success-btn {
+  margin-top: 24px;
+  width: 100%;
+  height: 40px;
+  border-radius: 999px;
+  background-color: #0a4cff;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.success-btn:hover {
+  background-color: #003ddb;
+}

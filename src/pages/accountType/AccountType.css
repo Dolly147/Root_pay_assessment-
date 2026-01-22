@@ -1,0 +1,91 @@
+/* Instruction text */
+.account-instruction {
+  width: 453px;
+  height: 68px;
+  margin-top: 40px;
+  position: relative;
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 143%;
+  paragraph-spacing: 32px;
+  letter-spacing: -0.36px;
+  color: #132C4A;
+}
+.account-instruction span {
+  font-weight: 600;
+}
+
+/* Account cards wrapper */
+.account-options {
+  width: 516px;
+  height: 168px;
+  margin-top: 60px;
+  left: 748px;
+}
+
+/* Card */
+.account-card {
+  width: 516px;
+  height: 76px;
+  border-radius: 12px;
+  border: 1px solid #003ddb;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Active card */
+.account-card.active {
+  background-color: #fdfdfd;
+}
+
+/* Left content */
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-icon {
+  width: 14px;
+  height: 16px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+  vertical-align: middle;
+  color: blue;
+  align-items: center;
+}
+
+
+.card-text {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+  color: #003ddb;
+  letter-spacing: 0px;
+  line-height: 100%;
+  gap: 24px
+}
+
+/* Check circle */
+.check-circle {
+  width: 24px;
+  height: 24px;
+  background-color: #0a4cff;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
