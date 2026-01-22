@@ -13,9 +13,11 @@ type Country = {
 export default function PhoneNumber({
   onNext,
   onBack,
+  onSubmitPhone,
 }: {
   onNext: () => void;
   onBack: () => void;
+  onSubmitPhone: (phone: string) => void;
 }) {
   const [phone, setPhone] = useState("");
 
@@ -30,20 +32,17 @@ export default function PhoneNumber({
       <div className="container">
         <h2 className="phone-title">OTP Verification</h2>
 
-        <label className="phone-label">Mobile Number <span>*</span></label>
+        <label className="phone-label">
+          Mobile Number <span>*</span>
+        </label>
 
         <div className="phone-input-row">
-          <CountryCodeDropdown
-            value={country}
-            onChange={setCountry}
-          />
+          <CountryCodeDropdown value={country} onChange={setCountry} />
 
           <input
             type="tel"
             value={phone}
-            onChange={(e) =>
-              setPhone(e.target.value.replace(/\D/g, ""))
-            }
+            onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
             placeholder="Enter mobile number"
             className="phone-input"
           />
@@ -57,7 +56,10 @@ export default function PhoneNumber({
 
         <button
           className="btn-primary"
-          onClick={onNext}
+          onClick={() => {
+            onSubmitPhone(phone);
+            onNext();
+          }}
           disabled={phone.length !== 10}
         >
           Continue

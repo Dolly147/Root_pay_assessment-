@@ -38,9 +38,7 @@ export default function OTPVerification({
 
   return (
     <AuthLayout>
-
       <div className="container">
-        
         <h2 className="otp-title">OTP Verification</h2>
 
         <p className="otp-subtext">
@@ -51,7 +49,9 @@ export default function OTPVerification({
           {otp.map((value, i) => (
             <input
               key={i}
-              ref={(el) => (inputRefs.current[i] = el)}
+              ref={(el) => {
+                if (el) inputRefs.current[i] = el;
+              }}
               type="text"
               maxLength={1}
               value={value}
@@ -61,14 +61,16 @@ export default function OTPVerification({
             />
           ))}
         </div>
-      
+
         <div className="resend-otp">
           Did not receive the OTP?{" "}
           <span className="resend-link">Resend OTP</span>
         </div>
 
         <div className="auth-actions" style={{ marginTop: "500px" }}>
-          <button className="btn-outline" onClick={onBack}>Back</button>
+          <button className="btn-outline" onClick={onBack}>
+            Back
+          </button>
 
           <button
             className="btn-primary"
@@ -77,11 +79,8 @@ export default function OTPVerification({
           >
             Continue
           </button>
+        </div>
       </div>
-      </div>
-
-
-   
     </AuthLayout>
   );
 }

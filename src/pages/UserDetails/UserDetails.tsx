@@ -5,11 +5,11 @@ import "../styles/actions.css"
 export default function UserDetails({
   onNext,
   onBack,
-  onSubmitName
+  onSubmitName,
 }: {
   onNext: () => void;
   onBack: () => void;
-  onSubmitName: (firstName: string, lastName: string) => void;
+  onSubmitName: (name: string) => void;
 }) {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -17,9 +17,13 @@ export default function UserDetails({
   const isFormValid =
     firstName.trim() !== "" && lastName.trim() !== "";
 
+  const handleContinue = () => {
+    onSubmitName(`${firstName} ${lastName}`);
+    onNext();
+  };
+
   return (
     <AuthLayout>
-
       <div className="container">
         <h2 className="user-title">What is your name?</h2>
 
@@ -53,9 +57,7 @@ export default function UserDetails({
 
         <button
           className="btn-primary"
-          onClick={() => {
-            onNext();
-          }}
+          onClick={handleContinue}
           disabled={!isFormValid}
         >
           Continue

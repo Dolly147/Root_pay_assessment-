@@ -3,24 +3,23 @@ import Success from "../../components/Success";
 import { useState } from "react";
 import "../styles/actions.css"
 import "./CreatePassword.css";
-import "../styles/actions.css";
-import UserDetails from "../UserDetails/UserDetails";
-import PhoneNumber
- from "../OTPVerification/PhoneNumber";
 
 export default function Password({
   onNext,
   onBack,
+  accountType,
+  email,
+  name,
+  phone
 }: {
   onNext: () => void;
   onBack: () => void;
+  accountType: string;
+  email: string;
+  name: string;
+  phone: string;
 }) {
   const [showSuccess, setShowSuccess] = useState(false);
-
-  const accountType = "";
-  const email = ""  ;
-  const name = "";
-  const phone = "";
 
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");

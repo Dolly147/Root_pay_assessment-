@@ -1,4 +1,3 @@
-// Reusable layout for all auth screens
 import React from "react";
 import "./AuthLayout.css";
 
@@ -9,8 +8,6 @@ interface AuthLayoutProps {
 export default function AuthLayout({ children }: AuthLayoutProps) {
   return (
     <div className="auth-card">
-
-      {/* Left Section */}
       <div className="auth-left">
         <div className="heading">
           <p className="sub1">Let's get started</p>
@@ -23,13 +20,9 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
         </div>
       </div>
 
-      {/* Right Section */}
       <div className="auth-right">
-        <div className="form-content">
-          {children}
-        </div>
+        <div className="form-content">{children}</div>
       </div>
-
     </div>
   );
 }
