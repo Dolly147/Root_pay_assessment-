@@ -1,5 +1,6 @@
 import React from "react";
 import "./AuthLayout.css";
+import bgImage from "../assets/bg_image.png"
 
 interface AuthLayoutProps {
   children: React.ReactNode;
@@ -16,7 +17,7 @@ export default function AuthLayout({ children }: AuthLayoutProps) {
         </div>
 
         <div className="img-section">
-          <img src="src/assets/bg_image.png" alt="Illustration" />
+          <img src={bgImage} alt="Illustration" />
         </div>
       </div>
 
